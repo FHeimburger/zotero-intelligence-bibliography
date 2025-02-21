@@ -31,12 +31,12 @@ from st_keyup import st_keyup
 
 set_page_config()
 
-st.title("Intelligence history", anchor=False)
+st.title("Reference and bibliography", anchor=False)
 
 with st.spinner('Retrieving data & updating dashboard...'):
 
     # # Connecting Zotero with API
-    # library_id = '2514686' # intel 2514686
+    # library_id = '55813' # First World War Studies 55813
     # library_type = 'group'
     # api_key = '' # api_key is only needed for private groups and libraries
 
@@ -59,7 +59,7 @@ with st.spinner('Retrieving data & updating dashboard...'):
     df_authors = get_df_authors()
     df_collections = pd.read_csv('all_items_duplicated.csv')
     # df_collections = df_collections[~df_collections['Collection_Name'].str.contains('01.98')]
-    df_collections = df_collections[df_collections['Collection_Name'] != '01 Intelligence history']
+    df_collections = df_collections[df_collections['Collection_Name'] != '01 Reference and Bibliography']
 
 
     df_collections = df_collections.sort_values(by='Collection_Name')
