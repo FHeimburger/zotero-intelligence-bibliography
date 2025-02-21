@@ -16,7 +16,7 @@ from datetime import datetime, timedelta
 
 ### RETRIEVING ITEMS FROM ZOTERO LIBRARY
 
-library_id = '2514686'
+library_id = '55813'
 library_type = 'group'
 api_key = '' # api_key is only needed for private groups and libraries
 zot = zotero.Zotero(library_id, library_type)
